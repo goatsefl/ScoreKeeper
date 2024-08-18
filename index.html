@@ -8,14 +8,30 @@
 	</head>
 	<body>
 		<h1>Score Keeper</h1>
-		<section id="main">
-			<script src="app.js"></script>
-		</section>
+		<section id="main"></section>
 		<br />
 		<section id="scores">
-			<button id="PLAYER1">PLAYER 1</button>
-			<button id="PLAYER2">PLAYER 2</button>
+			<label for="count">SELECT ROUNDS</label>
+			<select name="count" id="count">
+				<option value="7" id="values">7</option>
+				<option value="8" id="values">8</option>
+				<option value="9" id="values">9</option>
+				<option value="10" id="values">10</option>
+				<option value="11" id="values">11</option>
+				<option value="12" id="values">12</option>
+				<option value="13" id="values">13</option>
+				<option value="14" id="values">14</option>
+			</select>
+			<span>P1:</span>
+			<span id="p1">0</span>
+			<span>P2:</span>
+			<span id="p2">0</span>
+		</section>
+		<section id="controls">
+			<button id="PLAYER1">+PLAYER 1</button>
+			<button id="PLAYER2">+PLAYER 2</button>
 			<button id="reset">RESET</button>
 		</section>
+		<script src="app.js"></script>
 	</body>
 </html>
